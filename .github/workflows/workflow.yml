@@ -12,10 +12,6 @@ jobs:
           npm ci
           npm run build
 
-      defaults:
-      run:
-        working-directory: react_website
-
 
       - name: Deploy 
         uses: JamesIves/github-pages-deploy-action@v4.3.0
