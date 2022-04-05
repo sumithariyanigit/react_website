@@ -12,8 +12,16 @@ jobs:
           npm ci
           npm run build
 
+     
       - name: Deploy 
         uses: JamesIves/github-pages-deploy-action@v4.3.0
         with:
           branch: gh-pages # The branch the action should deploy to.
           folder: build # The folder the action should deploy.
+
+
+           - name: System tests BioDynaMo
+       shell: bash
+       working-directory: build
+       run: |
+         set -x
