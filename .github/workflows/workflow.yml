@@ -20,8 +20,4 @@ jobs:
           folder: build # The folder the action should deploy.
 
 
-           - name: System tests BioDynaMo
-       shell: bash
-       working-directory: build
-       run: |
-         set -x
+          
