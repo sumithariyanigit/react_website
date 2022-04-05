@@ -11,11 +11,11 @@ jobs:
         run: |
           npm ci
           npm run build
-          Process finished with exit code 1\
 
 
       - name: Deploy 
         uses: JamesIves/github-pages-deploy-action@v4.3.0
         with:
+          node-version: 16.14.0
           branch: gh-pages # The branch the action should deploy to.
           folder: build # The folder the action should deploy.
