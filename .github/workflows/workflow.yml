@@ -9,15 +9,13 @@ jobs:
 
       - name: Install and Build 
         run: |
-         while read -r cmd
-        do
-          eval sudo $cmd
-        done < <(Rscript -e 'cat(remotes::system_requirements("ubuntu", "20.04"), sep = "\n")')
+          npm ci
+          npm run build
 
 
       - name: Deploy 
         uses: JamesIves/github-pages-deploy-action@v4.3.0
         with:
-          node-version: 16.14.0
+          node-version: 18.0.0
           branch: gh-pages # The branch the action should deploy to.
           folder: build # The folder the action should deploy.
