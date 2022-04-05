@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 // import Header from './Header';
 import HeroSection from './Components/HeroSection';
@@ -13,13 +13,13 @@ import HeroSection from './Components/HeroSection';
 
 function App() {
  
-  useEffect( () => {
-    const body = document.querySelector("body");
-    document.body.classList.add("body_header");
-    return () => {
-      body.classList.remove("body_header");
-    }
-  } );
+  // useEffect( () => {
+  //   const body = document.querySelector("body");
+  //   document.body.classList.add("body_header");
+  //   return () => {
+  //     body.classList.remove("body_header");
+  //   }
+  // } );
 
  
   return (
