@@ -9,7 +9,7 @@ jobs:
 
       - name: Install and Build 
         run: |
-          npm ci
+          npm react-scripts
           npm run build
 
 
