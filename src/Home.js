@@ -7,7 +7,7 @@ import RecentBlogs from './Components/RecentBlogs';
 import Testimonial from './Components/Testimonial';
 import Footer from './Footer';
 import Subscribe from './Components/Subscribe';
-import { Outlet, Link } from "react-router-dom";
+// import { Outlet, Link } from "react-router-dom";
 import BestOffers from './Components/BestOffers';
 
 
