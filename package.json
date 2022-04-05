@@ -15,6 +15,9 @@
     "react-scripts": "5.0.0",
     "web-vitals": "^2.1.4"
   },
+  "resolutions": {
+    "node-sass": "https://registry.npmjs.org/node-sass/-/node-sass-7.0.0.tgz"
+  },
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
