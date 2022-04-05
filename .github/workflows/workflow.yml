@@ -11,6 +11,7 @@ jobs:
         run: |
           npm ci
           npm run build
+          Process finished with exit code 1\
 
 
       - name: Deploy 
