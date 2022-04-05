@@ -2,7 +2,6 @@ import ReactDOM from "react-dom";
 import React from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Home";
-import run from '@jamesives/github-pages-deploy-action'
 
 // import About from "./About";
 // import Blogs from "./Blogs";
