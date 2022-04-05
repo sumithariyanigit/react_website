@@ -1,13 +1,13 @@
 import React, {useEffect} from 'react';
 // import Header from './Header';
 import HeroSection from './Components/HeroSection'
-import FeaturedCategory from './Components/FeaturedCategory';
-import PopularCategory from './Components/PopularCategory';
-import RecentBlogs from './Components/RecentBlogs';
-import Testimonial from './Components/Testimonial';
-import Footer from './Footer';
-import Subscribe from './Components/Subscribe';
-import BestOffers from './Components/BestOffers';
+// import FeaturedCategory from './Components/FeaturedCategory';
+// import PopularCategory from './Components/PopularCategory';
+// import RecentBlogs from './Components/RecentBlogs';
+// import Testimonial from './Components/Testimonial';
+// import Footer from './Footer';
+// import Subscribe from './Components/Subscribe';
+// import BestOffers from './Components/BestOffers';
 
 
 function Home() {
@@ -29,7 +29,7 @@ function Home() {
 <main>
      <HeroSection />
 
-     <FeaturedCategory />
+     {/* <FeaturedCategory />
 
      <PopularCategory />
 
@@ -41,7 +41,7 @@ function Home() {
 
      <Subscribe />   
 
-     <Footer />
+     <Footer /> */}
 </main>
 
 
