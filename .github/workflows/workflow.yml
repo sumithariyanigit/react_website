@@ -12,6 +12,10 @@ jobs:
           npm ci
           npm run build
 
+      defaults:
+      run:
+        working-directory: myfunctionname
+
 
       - name: Deploy 
         uses: JamesIves/github-pages-deploy-action@v4.3.0
