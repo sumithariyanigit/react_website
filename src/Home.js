@@ -10,42 +10,45 @@ import Subscribe from './Components/Subscribe';
 import { Outlet, Link } from "react-router-dom";
 import BestOffers from './Components/BestOffers';
 
-function App() {
 
-    useEffect( () => {
-      const body = document.querySelector("body");
-      document.body.classList.add("body_header");
-      return () => {
-        body.classList.remove("body_header");
-      }
-    } );
-  
-   
-    return (
-      <>
-  
-       <Header />
-  
-  <main>
-       <HeroSection />
-  
-       <FeaturedCategory />
-  
-       <PopularCategory />
-  
-       <BestOffers />     
-  
-       <RecentBlogs />
-       
-       <Testimonial />
-  
-       <Subscribe />   
-  
-       <Footer />
-  </main>
-  
+function Home() {
+ 
+  useEffect( () => {
+    const body = document.querySelector("body");
+    document.body.classList.add("body_header");
+    return () => {
+      body.classList.remove("body_header");
+    }
+  } );
+
+ 
+  return (
+    <>
+
+     <Header />
+
+<main>
+     <HeroSection />
+
+     <FeaturedCategory />
+
+     <PopularCategory />
+
+     <BestOffers />     
+
+     <RecentBlogs />
+     
+     <Testimonial />
+
+     <Subscribe />   
+
+     <Footer />
+</main>
+
+
+
     </>
   );
 }
 
-export default App;
+export default Home;
