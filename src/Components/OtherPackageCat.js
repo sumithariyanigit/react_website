@@ -14,7 +14,7 @@ function OtherPackageCat() {
                <div className='col-lg-3'>
                <div className="team_list">
                   <a href="#">
-                     <img src="assets/images/p1.png" alt="Packages images" />
+                     <img src={process.env.PUBLIC_URL + '/assets/images/p1.png'} alt="Packages images" />
                      <h5>Floor</h5>
                   </a>
                </div>
@@ -23,7 +23,7 @@ function OtherPackageCat() {
                <div className='col-lg-3'>
                <div className="team_list">
                   <a href="#">
-                  <img src="assets/images/p2.png" alt="Packages images" />
+                  <img src={process.env.PUBLIC_URL + '/assets/images/p2.png'} alt="Packages images" />
                      <h5>Sink</h5>
                   </a>
                </div>
@@ -32,7 +32,7 @@ function OtherPackageCat() {
                <div className='col-lg-3'>
                <div className="team_list">
                   <a href="#">
-                  <img src="assets/images/p3.png" alt="Packages images" />
+                  <img src={process.env.PUBLIC_URL + '/assets/images/p3.png'} alt="Packages images" />
                      <h5>Dusting</h5>
                   </a>
                </div>
@@ -41,7 +41,7 @@ function OtherPackageCat() {
                <div className='col-lg-3'>
                <div className="team_list">
                   <a href="#">
-                  <img src="assets/images/p1.png" alt="Packages images" />
+                  <img src={process.env.PUBLIC_URL + '/assets/images/p1.png'}  alt="Packages images" />
                      <h5>Floor</h5>
                   </a>
                </div>

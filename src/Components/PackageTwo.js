@@ -20,7 +20,7 @@ function PackageTwo() {
                    <div className="col-lg-4  wow fadeInUp" data-wow-delay=".3s">
                        <div className="card_package">
                        <Link to='/package-detail' className="imght">
-                           <img src="assets/images/p4.png" />
+                           <img src={process.env.PUBLIC_URL + '/assets/images/p4.png'} />
                        </Link>
                        <h4>Iron</h4>
                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
@@ -30,7 +30,7 @@ function PackageTwo() {
                    <div className="col-lg-4  wow fadeInUp" data-wow-delay=".3s">
                        <div className="card_package">
                        <Link to='/package-detail' className="imght">
-                           <img src="assets/images/p5.png" />
+                           <img src={process.env.PUBLIC_URL + '/assets/images/p5.png'} />
                        </Link>
                        <h4>Curtains</h4>
                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
@@ -40,7 +40,7 @@ function PackageTwo() {
                    <div className="col-lg-4  wow fadeInUp" data-wow-delay=".4s">
                        <div className="card_package">
                        <Link to='/package-detail' className="imght">
-                           <img src="assets/images/p6.png" />
+                           <img src={process.env.PUBLIC_URL + '/assets/images/p6.png'} />
                        </Link>
                        <h4>Sofa</h4>
                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>

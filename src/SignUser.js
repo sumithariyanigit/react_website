@@ -1,10 +1,7 @@
 import React,  { useEffect } from 'react';
-import Header from './Header';
-import Footer from './Footer';
-import { Outlet, Link } from "react-router-dom";
 import SignUp from './Components/SignUp';
 
-function BookingPackage() {
+function SignUser() {
     
     useEffect( () => {
         const body = document.querySelector("body");
@@ -17,14 +14,12 @@ function BookingPackage() {
 return (
 <>
 
-<Header />
 
 <SignUp />
  
-<Footer />
 
 </>
 );
 }
 
-export default BookingPackage;
+export default SignUser;

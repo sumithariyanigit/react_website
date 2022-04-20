@@ -1,10 +1,8 @@
 import React,  { useEffect } from 'react';
-import Header from './Header';
-import Footer from './Footer';
 import { Outlet, Link } from "react-router-dom";
 import BookingPackage from './Components/BookingPackage';
 
-function PackageDetail() {
+function BookPackage() {
     useEffect( () => {
         const body = document.querySelector("body");
         document.body.classList.add("body_black");
@@ -16,14 +14,10 @@ function PackageDetail() {
     return (
     <>
     
-   <Header />
-
    <BookingPackage />
-
-   <Footer />
 
     </>
     );
   }
   
-  export default PackageDetail;
+  export default BookPackage;

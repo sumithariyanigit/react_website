@@ -1,6 +1,4 @@
 import React,  { useEffect } from 'react';
-import Header from './Header';
-import Footer from './Footer';
 import Login from './Components/Login';
 
 function BookingPackage() {
@@ -16,11 +14,9 @@ function BookingPackage() {
 return (
 <>
 
-<Header />
 
 <Login />
  
-<Footer />
 
 </>
 );

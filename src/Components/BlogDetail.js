@@ -1,17 +1,18 @@
 import React, { useEffect, useState } from 'react';
-import { Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Related_blogs from './Components/Related_blogs';
 import Download_app from './Components/Download_app';
 import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 
 function Blogs(props) {
-   let blog_id = props.location.state.blog_id
+   // let blog_id = props.location.state.blog_id
+ // let blog_id = 1;
    const [get_category, setGet_category] = useState([]);
 
    const get_cat = async () => {
-
-      let org_code = localStorage.getItem('org_code');
+   
+      let blog_id = localStorage.getItem('blog_id');
 
       // const options = { headers:{"Content-type": "application/multipart/form-data" }};
 
@@ -57,7 +58,7 @@ function Blogs(props) {
                   <div className="row align-items-center">
                      <div className="col-lg-12 mt-70">
                         <div className="hero__content pr-80 text-center">
-                           <h1 className='text-white'>Blog</h1>
+                           <h1 className='text-white'>Blog Detail</h1>
                         </div>
                      </div>
 

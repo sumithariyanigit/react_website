@@ -15,16 +15,16 @@ function Sidebar() {
                        </div>
                     <div className={`sidebar ${isOpen == true ? 'active' : ''}`}>
                         <div className="sd-header">
-                            <h4 className="mb-0"><img src="assets/images/logo.png" alt="logo" width="80px" /></h4>
+                            <h4 className="mb-0"><img src={process.env.PUBLIC_URL + '/assets/images/logo.png'} alt="logo" width="80px" /></h4>
                             <div className="btn btn-primary" onClick={Sidebar}><i className="fa fa-times"></i></div>
                         </div>
                         <div className="sd-body">
                             <ul>
-                            <li><NavLink  className="sd-link" activeclassname="active " to='/about'>About</NavLink ></li>
-                              <li><NavLink className="sd-link"  to='/blogs'>Blog</NavLink ></li>
-                              <li><NavLink className="sd-link"  to='/packages'>Packages</NavLink ></li>
-                              <li><NavLink className="sd-link"  to='/contact'>Contact Us</NavLink ></li>
-                              <li><NavLink className="sd-link"  to='/login'>Login / Sign up</NavLink ></li>
+                            <li><NavLink onClick={Sidebar}  className="sd-link" activeclassname="active " to='/about'>About</NavLink ></li>
+                              <li><NavLink onClick={Sidebar} className="sd-link"  to='/blogs'>Blog</NavLink ></li>
+                              <li><NavLink onClick={Sidebar} className="sd-link"  to='/packages'>Packages</NavLink ></li>
+                              <li><NavLink onClick={Sidebar} className="sd-link"  to='/contact'>Contact Us</NavLink ></li>
+                              <li><NavLink onClick={Sidebar} className="sd-link"  to='/login'>Login / Sign up</NavLink ></li>
                                
                             </ul>
                         </div>

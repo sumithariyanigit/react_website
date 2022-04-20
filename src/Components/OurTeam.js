@@ -14,7 +14,7 @@ function OurTeam() {
                <div className='col-lg-3'>
                <div className="team_list">
                   <a href="#">
-                     <img src="assets/images/team-1.jpg" alt="team images" />
+                     <img src={process.env.PUBLIC_URL + '/assets/images/team.jpg'} alt="team images" />
                      <h5>John Jones</h5>
                   </a>
                </div>
@@ -23,7 +23,7 @@ function OurTeam() {
                <div className='col-lg-3'>
                <div className="team_list">
                   <a href="#">
-                     <img src="assets/images/team-2.jpg" alt="team images" />
+                     <img src={process.env.PUBLIC_URL + '/assets/images/team-2.jpg'} alt="team images" />
                      <h5>John Jones</h5>
                   </a>
                </div>
@@ -32,7 +32,7 @@ function OurTeam() {
                <div className='col-lg-3'>
                <div className="team_list">
                   <a href="#">
-                     <img src="assets/images/team-3.jpg" alt="team images" />
+                     <img src={process.env.PUBLIC_URL + '/assets/images/team-3.jpg'} alt="team images" />
                      <h5>John Jones</h5>
                   </a>
                </div>
@@ -41,7 +41,7 @@ function OurTeam() {
                <div className='col-lg-3'>
                <div className="team_list">
                   <a href="#">
-                     <img src="assets/images/team-4.jpg" alt="team images" />
+                     <img src={process.env.PUBLIC_URL + '/assets/images/team-4.jpg'} alt="team images" />
                      <h5>John Jones</h5>
                   </a>
                </div>

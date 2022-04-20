@@ -103,6 +103,7 @@
     .hero__search .w-200 {
         width: 100%;
         background: #0000007d;
+        color: #ffffff;
         border-bottom: 3px solid #2196f361 !important;
         border: none;
         margin-bottom: 1rem;
@@ -161,8 +162,10 @@
 }
 
 .sd-body ul li .active {
-    background: #2196f3;
+    background: #000000;
     color: white;
+    border-radius: 5px;
+    border: none;
 }
 
 .about__area img {
@@ -307,6 +310,140 @@
 .review-style
 {
     max-height: 470px;
+}
+.d_text
+{
+  display: none;
+}
+.m_text
+{
+    display: block;
+}
+.update_profile h3
+{
+    margin-bottom: 25px;
+}
+.input_type select
+{
+    width: 30%;
+}
+.pr-50
+{
+    padding-right: 12px;   
+}
+.list_previous
+{
+    width: 100%;
+}
+.list_previous .previous
+{
+    padding: 10px 1rem 10px 1rem;
+    display: block;
+}
+.rating_modal {
+    display: block !important;
+}
+.rating_modal input
+{
+    margin-bottom: 1rem;
+}
+.react-responsive-modal-modal .previous_title
+{
+    padding: 0px;
+}
+.modal_haff textarea, .rating_modal input
+{
+    font-size: 16px;
+    width: 100%;
+}
+
+.modal_haff textarea::placeholder, .rating_modal input::placeholder
+{
+    font-size: 16px;
+}
+.modal_haff
+{
+    width: 100%;
+    padding: 0px;
+}
+.react-responsive-modal-modal
+{
+    margin: 0.2rem !important;
+}
+
+
+
+.list_previous .previous .w-btn-3
+{
+    padding: 0 11px;
+}
+.list_previous .previous .actbn
+{
+    padding: 0 28px;
+}
+.filter {
+    width: 100%;
+    display: block;
+}
+.filter .mr-20
+{
+margin-bottom: 20px;
+}
+.previous_title i
+{
+    font-size: 3rem;
+    margin-top: -9px;
+    display: block;
+    margin-bottom: 1rem;
+}
+.previous_title
+{
+    display: inherit;
+    align-items: center;
+    padding: 0rem 0.8rem;
+    font-weight: 600;
+    margin-bottom: -2rem;
+}
+.usercard h5, .usercard h4 {
+    font-size: 28px;
+}
+.m-none
+{
+    display: none !important;
+}
+.list-total
+{
+    margin-top: 0.1rem;
+}
+.total_list_payment ul
+{
+    margin-top: 2rem;
+}
+.sidebar.active {
+    left: 0;
+    background: #272626;
+}
+.blog_list_style {
+    padding: 2rem 0rem;
+    display: inline-flex;
+    flex-flow: wrap;
+}
+
+.blog_list_style li
+{
+    width: 47%;
+    margin: 0.3rem;
+    padding: 0.8rem;
+}
+
+.blog_list_style li h5
+{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.blog_list_style li p {
+    font-size: 15px;
+    line-height: 17px;
 }
 
 

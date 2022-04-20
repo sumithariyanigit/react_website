@@ -1,12 +1,53 @@
 import React from "react" ;
-
-
+import { Link } from "react-router-dom";
+import{useState,useEffect } from 'react';
+import axios from 'axios';
+import { ToastContainer, toast } from 'react-toastify';
 
 function FeaturedCategory() {
+
+  const [get_category, setGet_category] = useState([]);
+
+
+const get_cat = async () =>{
+
+  let org_code = localStorage.getItem('org_code');
+   
+  const getData = async (formDataa) => 
+              { 
+              let formData = new FormData();
+               let name = 'a250bcr552s'   
+              formData.append("token",name );
+                  
+                const options = { headers:{ "Content-Type": "multipart/form-data",
+                "Accept": "application/json",
+                "type": "formData"}};
+                   console.log(formData); 
+                try{
+                  let response = await axios.post('https://cws.in.net/iron_gate/admin/api/get_category',formData,options);
+                
+                  return   response.data;
+                } catch(err){ console.error(err); toast.error('some errror'); return false;  }
+             }  
+            
+             let res = await getData({token:'a250bcr552s'}); 
+          
+             if(res.status){
+             setGet_category(res);
+             }else{
+                 toast.error(res.message);
+             }
+            }
+
+            useEffect(() => {
+              get_cat();
+            },[]);  
+         let dataarray =  get_category.data;
+            // if(get_category.status==true){
+              // console.log(dataarray);
+            // }
 return (
 <>
-
-
   <section className="blog__area section_card ">
 
     <div className="container pb-60">
@@ -20,18 +61,31 @@ return (
       </div>
       <div className="process-items">
         <div className="row justi-style">
-          <div className="single-item col-lg-2 col-md-6">
-          <a href="#" className="item">
-              <div className="thumb">
-                 <div className="img-thumb">
-                 <img src={process.env.PUBLIC_URL + '/assets/images/dustbin.png'} alt=""  /> 
-                 </div>
-                 <h5>House Cleaning</h5>
-               
-              </div>
-            </a>
-          </div>
-          <div className="single-item col-lg-2 col-md-6">
+ {(dataarray ?? []).map((dataarray)=>{
+   return  <> <div className="single-item col-lg-2 col-md-6">
+<Link to={{
+  pathname: "/packages",
+  state: {
+    cat_id: dataarray.cat_id,
+  }
+}} >
+<div className="item">
+    <div className="thumb">
+       <div className="img-thumb">
+       {/* <img src={dataarray.cat_image} alt=""   />  */}
+       <img src={dataarray.cat_image} alt="" style={{width: '135px'}} /> 
+       </div>
+       <h5>{dataarray.cat_name}</h5>
+    </div>
+  </div>
+  </Link>
+</div>  </>;
+ })}
+        
+
+     
+
+          {/* <div className="single-item col-lg-2 col-md-6">
           <a href="#" className="item">
               <div className="thumb">
                  <div className="img-thumb">
@@ -85,7 +139,7 @@ return (
                
               </div>
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

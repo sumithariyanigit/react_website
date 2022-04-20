@@ -1,5 +1,7 @@
 import React,{Component} from 'react';  
 import OwlCarousel from 'react-owl-carousel';  
+
+import axios from 'axios';
 import 'owl.carousel/dist/assets/owl.carousel.css';  
 import 'owl.carousel/dist/assets/owl.theme.default.css';   
 
@@ -34,9 +36,12 @@ const options = {
       }
    }
 };
-export class Testimonial extends Component {  
+export class Testimonial extends Component  {  
+
+  
         render()  
-        {  
+        {   
+    
           return (  
 
 
@@ -82,7 +87,7 @@ export class Testimonial extends Component {
    <div className="testimonial__avater mr-20">
 
       
-   <img src={process.env.PUBLIC_URL + '/assets/images/testi-6.png'} alt="" /> 
+   <img src={process.env.PUBLIC_URL + '/assets/images/team.jpg'} alt="" /> 
    </div>
    <div className="testimonial__author-3">
       <h4>Customer 1</h4>
@@ -107,7 +112,7 @@ export class Testimonial extends Component {
 
 <div className="testimonial__person d-flex align-items-center">
    <div className="testimonial__avater mr-20">
-   <img src={process.env.PUBLIC_URL + '/assets/images/testi-6.png'} alt="" /> 
+   <img src={process.env.PUBLIC_URL + '/assets/images/team.jpg'} alt="" /> 
    </div>
    <div className="testimonial__author-3">
       <h4>Customer 2</h4>
@@ -132,7 +137,7 @@ export class Testimonial extends Component {
 
 <div className="testimonial__person d-flex align-items-center">
    <div className="testimonial__avater mr-20">
-   <img src={process.env.PUBLIC_URL + '/assets/images/testi-6.png'} alt="" /> 
+   <img src={process.env.PUBLIC_URL + '/assets/images/team.jpg'} alt="" /> 
    </div>
    <div className="testimonial__author-3">
       <h4>Customer 3</h4>
@@ -157,7 +162,7 @@ export class Testimonial extends Component {
 
 <div className="testimonial__person d-flex align-items-center">
    <div className="testimonial__avater mr-20">
-   <img src={process.env.PUBLIC_URL + '/assets/images/testi-6.png'} alt="" /> 
+   <img src={process.env.PUBLIC_URL + '/assets/images/team.jpg'} alt="" /> 
    </div>
    <div className="testimonial__author-3">
       <h4>Customer 4</h4>

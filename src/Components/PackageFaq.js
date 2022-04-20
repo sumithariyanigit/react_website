@@ -1,7 +1,7 @@
 import React from "react" ;
 
 
-function FAQ() {
+function PackageFaq() {
     return (
         <>
         <div className="row justify-content-center mt-20 mb-20">
@@ -52,4 +52,4 @@ function FAQ() {
 );
 }
 
-export default FAQ
+export default PackageFaq

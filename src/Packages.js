@@ -1,19 +1,13 @@
-import React,  { useEffect } from 'react';
-import Header from './Header';
-import Footer from './Footer';
-import { Outlet, Link } from "react-router-dom";
-import Related_blogs from './Components/Related_blogs';
+import React from 'react';
 import Download_app from './Components/Download_app';
-import Package from './Components/Package';
+import PackageList from './Components/PackageList';
 import PackageTwo from './Components/PackageTwo';
 
 function Packages() {
  return (
     <>
-<Header />
-  
-<main>
-     
+
+
 <section className="hero__banner p-relative d-flex align-items-center"> 
   <div className="container">
      <div className="row align-items-center">
@@ -27,18 +21,12 @@ function Packages() {
   </div>
 </section>
 
-<Package />
+<PackageList />
 
 <Download_app />
 
 <PackageTwo />
 
- <Footer />
-
-
-
-
-</main>
 
     </>
   );
